@@ -8,6 +8,7 @@ The template is based on [Getting Started](https://material.io/develop/web/docs/
 - :heavy_check_mark: fixed outdated `babel-loader` configuration
 - :heavy_check_mark: links `Roboto` font
 - :heavy_check_mark: proper `mdc-button` HTML markup
+- :heavy_check_mark: uses `TypeScript`
 
 
 **MDC-Web is used with SASS** (not via CDN) allowing you to use mixins, perform customizations and theming. As an example, the template includes customized [@material/button](https://material.io/components/buttons/web) component.

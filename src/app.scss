@@ -1,6 +1,75 @@
-@use '@material/button/mdc-button';
-@use '@material/button';
+@use '@material/theme' with (
+  $background: #fce4ec,
+  $primary: #880e4f,
+  $secondary: #018786,
+  $on-primary: #ffffff,
+  $on-secondary: #ffffff
+);
 
-.foo-button {
-  @include button.container-fill-color(darksalmon);
+@use '@material/button';
+@use '@material/button/mdc-button';
+@use '@material/card';
+@use '@material/card/mdc-card';
+@use '@material/chips/styles';
+@use '@material/icon-button/_icon-button';
+@use '@material/layout-grid/mdc-layout-grid';
+@use '@material/ripple';
+@use '@material/shape';
+@use '@material/tab';
+@use '@material/tab-bar/mdc-tab-bar';
+@use '@material/tab-indicator';
+@use '@material/tab-indicator/mdc-tab-indicator';
+@use '@material/tab-scroller/mdc-tab-scroller';
+@use '@material/tab/mdc-tab';
+@use '@material/top-app-bar/mdc-top-app-bar';
+@use '@material/typography';
+
+$card-text-label-baseline: 16px;
+$card-secondary-baseline: 16px;
+$card-radius: 16px;
+
+body {
+  margin: 0;
+  background: #fce4ec;
+}
+
+@include icon-button.core-styles;
+@include card.core-styles;
+
+.adopt-a-pup-tab {
+  @include tab.text-label-color(white);
+  @include tab.icon-color(white);
+  @include ripple.surface;
+  .mdc-tab__ripple {
+    @include ripple.states;
+  }
+}
+
+.adopt-a-pup-tab-indicator {
+  @include tab-indicator.underline-color(white);
+}
+
+.adopt-a-pup--fixed-adjust {
+  padding-top: 112px;
+}
+.adopt-a-pup-card {
+  @include shape.radius($card-radius);
+  padding: 16px;
+}
+
+.mdc-card__actions {
+  justify-content: flex-end;
+}
+
+.adopt-a-pup-card__secondary {
+  margin: 0 16px;
+  @include typography.typography(body2);
+  @include typography.baseline-top(24px);
+  @include typography.baseline-bottom(-$card-secondary-baseline);
+}
+
+.adopt-a-pup-card__text-label {
+  margin: 0 16px;
+  @include typography.typography(headline6);
+  @include typography.baseline-bottom(-$card-text-label-baseline);
 }

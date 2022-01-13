@@ -1,36 +1,20 @@
-# Basic Material Starter Kit
+# Adopt a Pup
 
+An updated version of the [Glitch reference app](https://glitch.com/edit/#!/adopt-a-pup)
 
-:rocket: **Basic template for experimenting and prototyping with [Material Components for the Web](https://material.io/develop/web) (or MDC-Web).**
+## Features
 
-The template is based on [Getting Started](https://material.io/develop/web/docs/getting-started) doc, but fixes some errors and adds small improvements:
-
-- :heavy_check_mark: fixed outdated `babel-loader` configuration
-- :heavy_check_mark: links `Roboto` font
-- :heavy_check_mark: proper `mdc-button` HTML markup
-
-
-**MDC-Web is used with SASS** (not via CDN) allowing you to use mixins, perform customizations and theming. As an example, the template includes customized [@material/button](https://material.io/components/buttons/web) component.
-
-
-## Usage
-
-### Developing locally
-
-Go to [Releases](https://github.com/kekscs/basic-material-starter-kit/releases) and download the latest release. Unpack it, rename the folder/app and use it as a starting point for experimenting with MDC-Web:
-``` bash
-# install dependencies
-yarn install
-
-# serve with hot reload at localhost:8080
-yarn start
-
-# build for production with minification
-yarn build
-```
-
-### Developing and sharing online
-
-1. Go to [codesandbox.io](https://codesandbox.io/) and click Create Sandbox.
-2. Select "Import Project" and enter GitHub repository: `https://github.com/kekscs/basic-material-starter-kit`
-3. Once the initialization is done, you'll have online workspace ready for development and sharing.
+- [mdc-button](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
+- [mdc-card](https://github.com/material-components/material-components-web/tree/master/packages/mdc-card)
+- [mdc-chips](https://github.com/material-components/material-components-web/tree/master/packages/mdc-chips)
+- [mdc-layout-grid](https://github.com/material-components/material-components-web/tree/master/packages/mdc-layout-grid)
+- [mdc-ripple](https://github.com/material-components/material-components-web/tree/master/packages/mdc-ripple)
+- [mdc-shape](https://github.com/material-components/material-components-web/tree/master/packages/mdc-shape)
+- [mdc-tab](https://github.com/material-components/material-components-web/tree/master/packages/mdc-tab)
+- [mdc-tab-bar](https://github.com/material-components/material-components-web/tree/master/packages/mdc-tab-bar)
+- [mdc-tab-indicator](https://github.com/material-components/material-components-web/tree/master/packages/mdc-tab-indicator)
+- [mdc-tab-scroller](https://github.com/material-components/material-components-web/tree/master/packages/mdc-tab-scroller)
+- [mdc-tab](https://github.com/material-components/material-components-web/tree/master/packages/mdc-tab)
+- [mdc-theme](https://github.com/material-components/material-components-web/tree/master/packages/mdc-theme)
+- [mdc-top-app-bar](https://github.com/material-components/material-components-web/tree/master/packages/mdc-top-app-bar)
+- [mdc-typography](https://github.com/material-components/material-components-web/tree/master/packages/mdc-typography)
